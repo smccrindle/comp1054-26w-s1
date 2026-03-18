@@ -31,8 +31,8 @@ details {
 /* Thanks to the great article at https://css-tricks.com/using-styling-the-details-element/ */
 ::details-content {
   transition: 
-  	height 0.5s ease,
-	content-visibility 0.5s ease allow-discrete;
+  	height 0.25s ease,
+	content-visibility 0.25s ease allow-discrete;
   height: 0;
   overflow: clip;
 }
@@ -71,6 +71,9 @@ summary::marker {
 summary::after {
 	content: "+";
 	float: right;
+	font-size: 2rem;
+	position: relative;
+	top: -0.5rem;
 }
 /* STEP 5c: If the panel is open, then change it to a "-" character to allow user to close it again - proceed to accordion.js for the next step */
 details[open] summary::after {
